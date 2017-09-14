@@ -22,11 +22,11 @@ public class MaskButtonScript : MonoBehaviour {
     {
         if (allowDoubleJump)
         {
-            GameObject.Find("Player").GetComponent<Player>().canDoubleJump = true;
+            GameObject.Find("Player").GetComponent<PlayerDeathless>().canDoubleJump = true;
         }
         else
         {
-            GameObject.Find("Player").GetComponent<Player>().canDoubleJump = false;
+            GameObject.Find("Player").GetComponent<PlayerDeathless>().canDoubleJump = false;
         }
         altSpriteManager.GetComponent<AltSpriteManagerScript>().ChangeAllSprites(maskID);
     }
